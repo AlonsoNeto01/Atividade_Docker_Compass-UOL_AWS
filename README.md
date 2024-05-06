@@ -2,11 +2,12 @@
 A atividade envolveu a configuração de um ambiente na AWS com Docker para implantar o WordPress. Os requisitos incluíam instalação do Docker em uma instância EC2 via script, implantação do WordPress com MySQL em contêineres, uso do serviço EFS para armazenamento estático, configuração de um Load Balancer Classic para escalabilidade e alta disponibilidade, evitando o uso de IPs públicos e demonstrando a aplicação WordPress em funcionamento.
 
 ### Requisitos:
-- Instalação e configuração do DOCKER ou CONTAINERD no host EC2.
-- Ponto adicional para o trabalho: Utilizar a instalação via script de Start Instance (user_data.sh).
-- Efetuar deploy de uma aplicação WordPress com container de aplicação RDS database MySQL.
-- Configuração da utilização do serviço EFS AWS para estáticos do container de aplicação WordPress.
-- Configuração do serviço de Load Balancer AWS para a aplicação WordPress.
+> [!IMPORTANT]
+> - Instalação e configuração do DOCKER ou CONTAINERD no host EC2.
+> - Ponto adicional para o trabalho: Utilizar a instalação via script de Start Instance (user_data.sh).
+> - Efetuar deploy de uma aplicação WordPress com container de aplicação RDS database MySQL.
+> - Configuração da utilização do serviço EFS AWS para estáticos do container de aplicação WordPress.
+> - Configuração do serviço de Load Balancer AWS para a aplicação WordPress.
 
 ### Pontos de atenção:
 - Não utilizar IP público para saída dos serviços WordPress (Evitem publicar o serviço WordPress via IP público).
