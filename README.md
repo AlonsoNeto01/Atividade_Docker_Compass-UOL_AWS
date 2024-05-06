@@ -21,7 +21,7 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
 
 ## Etapas de execução
 
-### Configuração da Network:
+### Configuração da Network: :globe_with_meridians:
 - Acessei o console AWS e entrei no serviço **VPC**.
 - No menu lateral esquerdo, na seção de **NUVEM PRIVADA VIRTUAL** selecionei **SUAS VAPCs**.
 - Dentro de **SUAS VPCs** cliquei no botão **CRIAR VPC**.
@@ -36,7 +36,7 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
 ![image](https://github.com/AlonsoNeto01/Atividade_Docker_Compass-UOL_AWS/assets/164195128/18f16f51-0d73-4b2f-af2b-f5588045786e)
 
 
-### Configuração dos Security Groups:
+### Configuração dos Security Groups: :closed_lock_with_key:
 - Acessei o console AWS e entrei no serviço **EC2**.
 - No menu lateral esquerdo, na seção de **REDE E SUGURANÇA**, selecionei **SECURITY GROUPS**.
 - Dentro de **SECURITY GROUPS**, cliquei no botão **CRIAR GRUPO DE SUGURANÇA**.
@@ -70,7 +70,7 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
 
       
 
-### Criando o EFS:
+### Criando o EFS: :cloud:
 - Acessei o console AWS e entrei no serviço de **EFS**.
 - Na tela do **Elastic File System** cliquei no botão **CRIAR SISTEMA DE ARQUIVOS**.
 - Depois cliquei no botão **PERSONALIZAR**.
@@ -92,7 +92,7 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
     - #### ETAPA 4 - Revisar e criar:
         - Revisei e cliquei em **CRIAR** para finalizar.
 
-### Criando o Relational Database Service:
+### Criando o Relational Database Service: :bank:
 - Acessei o console AWS e entrei no serviço de **RDS**.
 - Na tela **PAINEL** cliquei no botão **Criar banco de dados**.
 - Executei a seguinte configuração:
@@ -104,7 +104,7 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
     - Na seção **Configuração adicional**, no campo **Porta do banco de dados** coloquei o nome "TDB".
 - Revisei e cliquei em **Criar banco de dados** para finalizar.
 
-### Criando o Classic Load Balancer:
+### Criando o Classic Load Balancer: :repeat:
 - Acessei o console AWS e entrei no serviço **EC2**.
 - No menu lateral esquerdo, na seção de **Balanceamento de carga** selecionei **Load Balancers**.
 - Dentro de **Load Balancers** cliquei no botão **Criar load balancer**.
@@ -120,7 +120,7 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
 
 
 
-### Gerando a Key pair:
+### Gerando a Key pair: :key:
 - Acessei o console AWS e entrei no serviço **EC2**.
 - No menu lateral esquerdo, na seção de **Rede de sugurança** selecionei **Pares de chaves**.
 - Dentro de **Pares de chaves** cliquei no botão **Criar par de chaves**.
@@ -132,7 +132,7 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
 
 
 
-### Criando o Launch Template:
+### Criando o Launch Template: :sparkles:
 - Acessei o console AWS e entrei no serviço **EC2**.
 - No menu lateral esquerdo, na seção **Instâncias** selecionei **Modelos de execução**.
 - Dentro de **Modelos de execução** cliquei no botão **Criar modelo de execução**.
@@ -201,7 +201,7 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
     ```
 - Cliquei em **Criar modelo de execução** para finalizar.
 
-### Criando o Auto Scaling Groups:
+### Criando o Auto Scaling Groups: :rocket:
 - Acessei o console AWS e entrei no serviço **EC2**.
 - No menu lateral esquerdo, na seção de **Auto Scaling** selecionei **Grupos de Auto Scaling**.
 - Dentro de **Grupos de Auto Scaling** cliquei no botão **Criar grupo de Auto Scaling**.
@@ -232,7 +232,7 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
         - Cliquei em **Próximo**.
         - Revisei e cliquei em **Criar grupo de Auto Scaling** para finalizar.
 
-### Configuração do EC2 Instance Connect Endpoint:
+### Configuração do EC2 Instance Connect Endpoint: :envelope:
 - Acessei o console AWS e entrei no serviço **VPC**.
 - No menu lateral esquerdo, na seção de **Nuvem privada virtual** selecionei **Endpoints**.
 - Dentro de **Endpoints** cliquei no botão **Criar endpoint**.
@@ -248,7 +248,7 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
 
 
 
-### Instalando o WordPress:
+### Instalando o WordPress: :computer:
 - Acessei o **DNS name** do **Load Balancer** através do navegador.
 - Na tela de instalação do **WordPress** mantive o idioma padrão e cliquei em **Continue**.
 
