@@ -98,7 +98,7 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
     - Na seção **Opções do mecanismo** selecionei **MySQL**.
     - Na seção **Modelos** selecionei **Nível gratuito**.
     - Na seção **Configurações de credenciais** fui em **Autogerenciada** e criei a senha.
-    - Na seção **Conectividade **, no campo **Nuvem privada virtual (VPC)** selecionei a VPC criada anteriormente.
+    - Na seção **Conectividade**, no campo **Nuvem privada virtual (VPC)** selecionei a VPC criada anteriormente.
     - No campo **Grupos de segurança da VPC existentes** selecionei o grupo "Amazon RDS" que foi criado anteriormente.
     - Na seção **Configuração adicional**, no campo **Porta do banco de dados** coloquei o nome "TDB".
 - Revisei e cliquei em **Criar banco de dados** para finalizar.
