@@ -115,7 +115,8 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
 - Na seção **Verificações de integridade**, no campo **Caminho de ping** adicionei o caminho "/wp-admin/install.php".
 - Cliquei em **Criar load balancer** para finalizar.
 
-  ![Captura de tela 2024-05-05 155432](https://github.com/AlonsoNeto/teste/assets/131974817/39936a8c-43be-433b-b49d-41d997316ced)
+  ![Captura de tela 2024-05-05 155432](https://github.com/AlonsoNeto01/Atividade_Docker_Compass-UOL_AWS/assets/164195128/0fba7b04-f9c5-4565-9130-bd9bf4c58803)
+
 
 
 ### Gerando a Key pair:
@@ -128,7 +129,6 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
 - Cliquei no botão **Criar par de chaves**.
 - Salvei o arquivo .pem.
 
-  ![Captura de tela 2024-05-05 155631](https://github.com/AlonsoNeto/teste/assets/131974817/d9311db6-665b-4175-9240-1eb3b1e3c3e3)
 
 
 ### Criando o Launch Template:
@@ -243,16 +243,23 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
     - Em **Subnet** selecionei uma subnet privada que foi criada anteriormente.
 - Cliquei em **Criar endpoint**.
 
-![image](https://github.com/AlonsoNeto/teste/assets/131974817/f57cb17b-7f92-4461-aa14-312bd5ce01ef)
+![Captura de tela 2024-05-05 192153](https://github.com/AlonsoNeto01/Atividade_Docker_Compass-UOL_AWS/assets/164195128/f0056a4a-f9d1-439c-8d5f-d35b84c32158)
+
 
 
 ### Instalando o WordPress:
 - Acessei o **DNS name** do **Load Balancer** através do navegador.
 - Na tela de instalação do **WordPress** mantive o idioma padrão e cliquei em **Continue**.
 
-  ![Captura de tela 2024-05-05 163405](https://github.com/AlonsoNeto/teste/assets/131974817/5f6b2897-b4c7-47a9-836f-e01c74c9f4bd)
+  ![Captura de tela 2024-05-05 163405](https://github.com/AlonsoNeto01/Atividade_Docker_Compass-UOL_AWS/assets/164195128/5055aa78-e808-4f1b-a8d2-9a7e556e5802)
+
 
 - Na tela seguinte preenchi os dados para criação de um usuário.
+
+![Captura de tela 2024-05-05 163535](https://github.com/AlonsoNeto01/Atividade_Docker_Compass-UOL_AWS/assets/164195128/71ec75fc-a172-4ade-978e-ef9f9508a9a4)
+
+
 - Cliquei em **Install WordPress** para finalizar.
 
-  ![Captura de tela 2024-05-05 163730](https://github.com/AlonsoNeto/teste/assets/131974817/6f1006a6-a1c4-42c6-987f-f8d919dc5314)
+ ![Captura de tela 2024-05-05 163730](https://github.com/AlonsoNeto01/Atividade_Docker_Compass-UOL_AWS/assets/164195128/ef537f6e-574a-4b49-a663-67fcaf53683d)
+
