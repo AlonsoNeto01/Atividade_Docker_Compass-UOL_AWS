@@ -263,3 +263,10 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
 
  ![Captura de tela 2024-05-05 163730](https://github.com/AlonsoNeto01/Atividade_Docker_Compass-UOL_AWS/assets/164195128/ef537f6e-574a-4b49-a663-67fcaf53683d)
 
+Para as referências usadas na condução da atividade, consulte a documentação oficial:
+https://hub.docker.com/_/wordpress
+[https://docs.aws.amazon.com/pt_br/AmazonRDS/latest/UserGuide/USER_CreateDBInstance.html](https://docs.aws.amazon.com/pt_br/)
+https://docs.docker.com/compose/install/standalone/
+https://github.com/docker
+
+ ![image](https://github.com/AlonsoNeto01/Atividade_Docker_Compass-UOL_AWS/assets/164195128/cc77143f-f81b-4e5b-a469-040d16f22be8)
