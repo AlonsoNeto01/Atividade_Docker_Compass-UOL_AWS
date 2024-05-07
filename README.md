@@ -215,12 +215,12 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
         - No campo **Zonas de disponibilidade e sub-redes** selecionei as duas subnets privadas criadas previamente.
         - Cliquei em **Próximo**.
     - #### Etapa 3 - Configurar opções avançadas - opcional :
-        - Na seção **Balanceamento de carga ** selecionei **Anexar a um balanceador de carga existente**.
+        - Na seção **Balanceamento de carga** selecionei **Anexar a um balanceador de carga existente**.
         - Na seção **Anexar a um balanceador de carga existente** cliquei em **Escolher entre Classic Load Balancers** e selecionei o load balancer criado anteriormente.
         - Na seção **Verificações de integridade** marquei a opção **Ative as verificações de integridade do Elastic Load Balancing**.
         - Cliquei em **Próximo**.
     - #### Etapa 4 - Configurar tamanho do grupo e ajuste de escala - opcional :
-        - No campo **Tamanho do grupo ** digitei "2".
+        - No campo **Tamanho do grupo** digitei "2".
         - Em **Escalabilidade**, no campo **Capacidade mínima desejada** digitei "2".
         - No campo **Capacidade máxima desejada** digitei "4".
         - Em **Ajuste de escala automática - opcional** selecionei a opção **Política de dimensionamento com monitoramento do objetivo**
@@ -263,6 +263,35 @@ A atividade envolveu a configuração de um ambiente na AWS com Docker para impl
 - Cliquei em **Install WordPress** para finalizar.
 
  ![Captura de tela 2024-05-05 163730](https://github.com/AlonsoNeto01/Atividade_Docker_Compass-UOL_AWS/assets/164195128/ef537f6e-574a-4b49-a663-67fcaf53683d)
+
+ - Testando a montagem do EFS:
+    - Utilizei o comando `df -h` para verificar se o **EFS** está montado.
+    - Utilizei o comando `cat /etc/fstab` para verificar se a **montagem persistente** está configurada.
+- Testando o docker e docker-compose:
+    - Utilizei o comando `docker ps` para verificar se o container **wordpress** está executando.
+    - Utilizei o comando abaixo para verificar se o **docker-compose** está funcionando:
+        ```
+        docker-compose -f /mnt/efs/docker-compose.yaml ps
+        ```
+- Acessando o banco de dados da aplicação WordPress:
+    - Copiar o ID do container **wordpress**.
+    - Para acessar o container executei o comando abaixo passando o ID do container:
+        ```
+        docker exec -it <container-id> /bin/bash
+        ``` 
+    - Dentro do container utilizei o comando `apt-get update` para atualizar a lista de pacotes dos repositórios do container.
+    - Utilizei o comando abaixo para instalar o **client mysql**.
+        ```
+        apt-get install default-mysql-client -y
+        ```
+    - Para acessar o **MySQL** executei o comando abaixo passando o endpoint, porta e usuário do **RDS**:
+        ```
+        mysql -h <RDS-endpoint> -P 3306 -u <Master username> -p
+        ```
+    - Digitei a senha do usuário.
+    - Utilizei o comando `show databases;` para listar os bancos de dados disponíveis.
+    - Utilizei o comando `use TDB` para selecionar o banco de dados **TDB**.
+    - Utilizei o comando `show tables;` para listar todas as tabelas criadas dentro do banco de dados **TDB**.
 
 Para as referências usadas na condução da atividade, consulte a documentação oficial:
 https://hub.docker.com/_/wordpress
